@@ -1,0 +1,53 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# ChromaDB / Vector database
+data/vector_store/
+*.sqlite3
+
+# Uploaded documents
+data/uploads/
+uploads/
+
+# Model files
+models/
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# HuggingFace cache
+.cache/
+huggingface/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Application database
+*.db
+
+# Data
+data/pdf/
+data/vector_store/
+
+# Databases
+*.db
+*.sqlite3
