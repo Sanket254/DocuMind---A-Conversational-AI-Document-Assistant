@@ -289,7 +289,8 @@ http://127.0.0.1:8000
 ---
 
 ## Demo Video
-<img width="400" height="202" alt="Recording 2026-07-30 174659" src="https://github.com/user-attachments/assets/5ec7410b-030e-49cf-a2f0-dc85f28c910a" />
+<img width="720" height="364" alt="Recording 2026-07-30 174659 (1)" src="https://github.com/user-attachments/assets/38998b17-bb82-4086-a263-cb60910cec5b" />
+
 
   
 
