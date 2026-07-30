@@ -222,7 +222,7 @@ DocuMind/
 │   ├── static/
 │   └── main.py
 |   └── schemas/
-|   └── dependecies.py
+|   └── dependencies.py
 │
 ├── src/
 |   ├── data_loader.py
@@ -325,10 +325,52 @@ Conversation Screenshot Placeholder
 
 ## Retrieval Pipeline
 
-> *(Add architecture image here)*
-
-```
-Architecture Diagram Placeholder
+```text
+                           User Question
+                                 │
+                                 ▼
+                     Conversation History
+                                 │
+                                 ▼
+                         Query Rewriting
+                                 │
+                                 ▼
+                       Rewritten Search Query
+                                 │
+                                 ▼
+                        Document Router (LLM)
+                                 │
+               ┌─────────────────┴─────────────────┐
+               │                                   │
+      Selected Documents                     All Documents
+               │                                   │
+               └─────────────────┬─────────────────┘
+                                 ▼
+                        Hybrid Retrieval
+                ┌────────────────┴────────────────┐
+                │                                 │
+                ▼                                 ▼
+      Dense Vector Search                 BM25 Keyword Search
+      (Sentence Transformers)              (rank-bm25)
+                │                                 │
+                └────────────────┬────────────────┘
+                                 ▼
+                 Reciprocal Rank Fusion (RRF)
+                                 │
+                                 ▼
+                  Cross-Encoder Reranker
+                                 │
+                                 ▼
+                     Top Relevant Chunks
+                                 │
+                                 ▼
+                     Prompt Construction
+                                 │
+                                 ▼
+                              LLM
+                                 │
+                                 ▼
+             Answer + Source Citations + Pages
 ```
 
 ---
