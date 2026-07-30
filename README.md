@@ -270,21 +270,14 @@ http://127.0.0.1:8000
 
 ## Application Interface
 
-> *(Add screenshots here)*
+<img width="1918" height="966" alt="image" src="https://github.com/user-attachments/assets/f6dc3baf-d6a1-4840-8a1e-86684a075fd6" />
 
-```
-Screenshot Placeholder
-```
 
 ---
 
 ## Example Conversation
+<img width="1918" height="965" alt="image" src="https://github.com/user-attachments/assets/461eb01e-7a17-4458-8c48-058807744c07" />
 
-> *(Add screenshots here)*
-
-```
-Conversation Screenshot Placeholder
-```
 
 ---
 
