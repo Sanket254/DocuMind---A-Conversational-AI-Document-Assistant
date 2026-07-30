@@ -28,43 +28,8 @@ The project was built to understand how modern RAG systems work beyond simple em
 ---
 
 # System Architecture
+<img width="1056" height="708" alt="Rag Project System Architecture" src="https://github.com/user-attachments/assets/f1d76668-7c00-41ee-add2-3d84de84c81a" />
 
-```
-                        User
-                         │
-                         ▼
-                FastAPI Backend
-                         │
-                         ▼
-                Query Rewriting
-         (Conversation-aware search)
-                         │
-                         ▼
-               Document Router
-        (Select relevant documents)
-                         │
-        ┌────────────────┴────────────────┐
-        │                                 │
-        ▼                                 ▼
- Dense Semantic Search              BM25 Keyword Search
- (Sentence Transformers)             (Lexical Retrieval)
-        │                                 │
-        └──────────────┬──────────────────┘
-                       ▼
-         Reciprocal Rank Fusion (RRF)
-                       │
-                       ▼
-          Cross-Encoder Reranker
-                       │
-                       ▼
-             Context Construction
-                       │
-                       ▼
-                    LLM
-                       │
-                       ▼
-      Final Response + Source Citations
-```
 
 ---
 
