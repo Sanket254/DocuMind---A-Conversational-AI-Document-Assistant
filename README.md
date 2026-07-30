@@ -325,53 +325,8 @@ Conversation Screenshot Placeholder
 
 ## Retrieval Pipeline
 
-```text
-                           User Question
-                                 │
-                                 ▼
-                     Conversation History
-                                 │
-                                 ▼
-                         Query Rewriting
-                                 │
-                                 ▼
-                       Rewritten Search Query
-                                 │
-                                 ▼
-                        Document Router (LLM)
-                                 │
-               ┌─────────────────┴─────────────────┐
-               │                                   │
-      Selected Documents                     All Documents
-               │                                   │
-               └─────────────────┬─────────────────┘
-                                 ▼
-                        Hybrid Retrieval
-                ┌────────────────┴────────────────┐
-                │                                 │
-                ▼                                 ▼
-      Dense Vector Search                 BM25 Keyword Search
-      (Sentence Transformers)              (rank-bm25)
-                │                                 │
-                └────────────────┬────────────────┘
-                                 ▼
-                 Reciprocal Rank Fusion (RRF)
-                                 │
-                                 ▼
-                  Cross-Encoder Reranker
-                                 │
-                                 ▼
-                     Top Relevant Chunks
-                                 │
-                                 ▼
-                     Prompt Construction
-                                 │
-                                 ▼
-                              LLM
-                                 │
-                                 ▼
-             Answer + Source Citations + Pages
-```
+<img width="541" height="884" alt="LLBBReCm4BmZyG--LwtKIhcabwH97r8JAONq0oop0GlOHUibYB_lWfEcFM5cTiSp0wiWbgLlcpGHBmsOBRb-xx4mzoO3OGzdsvY3xw3n26cI9g7ss5cshN7KTeI0aikecmnEB9OD_9q9bIrey5YQast2FshDJCEnygv62C4yFYnc-SdFT5X-1s3prKCGJ_WyGnl2Ct2m4s8-V13YCJ8wnw" src="https://github.com/user-attachments/assets/14f61f4e-f24d-474b-a202-daaf5fdcf1c1" />
+
 
 ---
 
