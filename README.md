@@ -347,4 +347,4 @@ Demo GIF Placeholder
 
 **Sanket Kashyap**
 
-Built as a capstone project to explore modern Retrieval-Augmented Generation (RAG) systems, conversational AI, and hybrid information retrieval techniques.
+Built as a personal project to explore modern Retrieval-Augmented Generation (RAG) systems, conversational AI, and hybrid information retrieval techniques.
