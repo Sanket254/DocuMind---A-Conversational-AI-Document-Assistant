@@ -225,6 +225,8 @@ DocuMind/
 |   └── dependecies.py
 │
 ├── src/
+|   ├── data_loader.py
+|   ├── text_splitter.py
 │   ├── embedding_manager.py
 │   ├── vector_store.py
 │   ├── retriever.py
